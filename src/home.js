@@ -15,7 +15,7 @@ function createTextContainer(){
     textContainer.classList.add('text-container')
 
     const h1 = document.createElement('h1')
-    h1.classList.add('red-text')
+    h1.classList.add('popout-text')
     h1.textContent = 'Phở'
     textContainer.appendChild(h1)
 
@@ -32,7 +32,7 @@ function createTextContainer(){
     squigglyLineContainer.appendChild(squigglyLine2)
 
     const h2 = document.createElement('h2')
-    h2.innerHTML = 'A Bowl of Love From <span class="red-text">Pho Delicious</span> For You'
+    h2.innerHTML = 'A Bowl of Love From <span class="popout-text">Pho Delicious</span> For You'
     textContainer.appendChild(h2)
 
     const p = document.createElement('p')
