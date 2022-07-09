@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-height: 100vh;
+    font-size: 16px;
+}
+
+:root {
+    --red: #F20544;
+    --green: #267302;
+    --dark-green: #0A4001;
+}
+
+img {
+    width: 100%;
+    max-height: 900px;
+    border-radius: 75px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-green);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 1.2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    border: 2px solid var(--green);
+    padding: 10px;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 700px;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+    border-bottom: 2px solid var(--green);
+}
+
+.active {
+    border-bottom: 2px solid var(--dark-green);
+    color: var(--dark-green);
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-left: 75px;
+    margin-right: 75px;
+    height: clamp(900px, 75vh, 90vh);
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.text-container > * {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.text-container h1 {
+    font-size: 5rem;
+    margin-bottom: 10px;
+}
+
+.text-container h2 {
+    font-size: 3.5rem;
+}
+
+.text-container p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.red-text {
+    color: var(--red);
+}
+
+.img-container {
+    margin: auto;
+}
+
+.btn {
+    width: 150px;
+    height: 40px;
+    background-color: var(--red);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    right: 5px;
+    bottom: -5px;
+    border: 1px solid black;
+    display: block;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-right: 75px;
+}
+
+footer a{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+footer a:first-child {
+    margin-left: 75px;
+}
+
+hr {
+    display: inline-block;
+    width: 100%;
+    border-top: 1px solid var(--green);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    align-self: center;
+}
+
+/* squiggly line */
+.holder {
+    /* Clip edges, as some of the lines don't terminate nicely. */
+    overflow: hidden;
+    position: relative;
+    width: 200px;
+    height: 50px;
+    margin-top: 10px;
+  }
+  
+  .ellipse {
+    position: absolute;
+    background: radial-gradient(ellipse, transparent, transparent 7px, black 7px, black 10px, transparent 11px);
+    background-size: 36px 40px;
+    width: 200px;
+    height: 20px;
+  }
+  
+  .ellipse2 {
+    top: 20px;
+    left: 18px;
+    background-position: 0px -20px;
+  }
+
+  .unsplash {
+    font-size: .8rem;
+  }
