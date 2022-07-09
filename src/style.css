@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;700&display=swap');
 
+/* GENERAL */
+
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +15,7 @@ body {
 
 :root {
     --red: #F20544;
+    --brown: #A68C6D;
     --green: #267302;
     --dark-green: #0A4001;
 }
@@ -28,6 +31,8 @@ a {
     color: var(--dark-green);
 }
 
+/* HEADER */
+
 header {
     display: flex;
     align-items: center;
@@ -38,7 +43,7 @@ header {
 
 .logo {
     font-size: 1.5rem;
-    border: 2px solid var(--green);
+    border: 2px solid var(--red);
     padding: 10px;
     font-weight: 700;
 }
@@ -48,6 +53,8 @@ nav {
     list-style: none;
     justify-content: space-around;
     width: 700px;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 .nav-item:hover {
@@ -59,6 +66,8 @@ nav {
     border-bottom: 2px solid var(--dark-green);
     color: var(--dark-green);
 }
+
+/* HOMEPAGE */
 
 .home {
     display: grid;
@@ -96,9 +105,37 @@ nav {
     line-height: 1.5;
 }
 
-.red-text {
-    color: var(--red);
+.popout-text {
+    color: var(--green);
 }
+
+/* squiggly line */
+.holder {
+    /* Clip edges, as some of the lines don't terminate nicely. */
+    overflow: hidden;
+    position: relative;
+    width: 200px;
+    height: 50px;
+    margin-top: 10px;
+  }
+  
+  .ellipse {
+    position: absolute;
+    background: radial-gradient(ellipse, transparent, transparent 7px, var(--red) 7px, var(--red) 10px, transparent 11px);
+    background-size: 36px 40px;
+    width: 200px;
+    height: 20px;
+  }
+  
+  .ellipse2 {
+    top: 20px;
+    left: 18px;
+    background-position: 0px -20px;
+  }
+
+  .unsplash {
+    font-size: .8rem;
+  }
 
 .img-container {
     margin: auto;
@@ -124,11 +161,13 @@ nav {
     left: -5px;
     right: 5px;
     bottom: -5px;
-    border: 1px solid black;
+    border: 1px solid var(--green);
     display: block;
     z-index: -1;
     border-radius: 5px;
 }
+
+/* FOOTER */
 
 footer {
     display: flex;
@@ -136,6 +175,7 @@ footer {
     justify-content: space-around;
     margin-top: 40px;
     margin-right: 75px;
+    margin-bottom: 100px;
 }
 
 footer a{
@@ -157,30 +197,3 @@ hr {
     align-self: center;
 }
 
-/* squiggly line */
-.holder {
-    /* Clip edges, as some of the lines don't terminate nicely. */
-    overflow: hidden;
-    position: relative;
-    width: 200px;
-    height: 50px;
-    margin-top: 10px;
-  }
-  
-  .ellipse {
-    position: absolute;
-    background: radial-gradient(ellipse, transparent, transparent 7px, black 7px, black 10px, transparent 11px);
-    background-size: 36px 40px;
-    width: 200px;
-    height: 20px;
-  }
-  
-  .ellipse2 {
-    top: 20px;
-    left: 18px;
-    background-position: 0px -20px;
-  }
-
-  .unsplash {
-    font-size: .8rem;
-  }
