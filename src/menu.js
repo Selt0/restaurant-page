@@ -9,6 +9,7 @@ function createMenu(){
     section.appendChild(description)
 
     const h1 = document.createElement('h1')
+    h1.classList.add('category')
     h1.textContent = 'Menu'
     description.appendChild(h1)
 
