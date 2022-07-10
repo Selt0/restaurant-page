@@ -11,7 +11,7 @@
 
 body {
     max-height: 100vh;
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Edu SA Beginner', cursive;
 }
 
@@ -35,6 +35,19 @@ a {
 
 section {
     height: max(900px, 100%);
+}
+
+.popout-text {
+    color: var(--green);
+    font-size: 1.2em;
+}
+
+.unsplash {
+    font-size: .8rem;
+  }
+
+.img-container {
+    margin: auto;
 }
 
 /* HEADER */
@@ -110,9 +123,7 @@ nav {
     line-height: 1.5;
 }
 
-.popout-text {
-    color: var(--green);
-}
+
 
 /* squiggly line */
 .holder {
@@ -124,27 +135,20 @@ nav {
     margin-top: 10px;
   }
   
-  .ellipse {
+.ellipse {
     position: absolute;
     background: radial-gradient(ellipse, transparent, transparent 7px, var(--red) 7px, var(--red) 10px, transparent 11px);
     background-size: 36px 40px;
     width: 200px;
     height: 20px;
-  }
-  
-  .ellipse2 {
+}
+
+.ellipse2 {
     top: 20px;
     left: 18px;
     background-position: 0px -20px;
   }
 
-  .unsplash {
-    font-size: .8rem;
-  }
-
-.img-container {
-    margin: auto;
-}
 
 .btn {
     width: 150px;
@@ -230,6 +234,21 @@ nav {
     line-height: 1.5;
 }
 
+/* STORY */
+.story {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.story p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 /* FOOTER */
 
 footer {
@@ -238,8 +257,8 @@ footer {
     justify-content: space-around;
     margin-top: 40px;
     margin-right: 75px;
-    margin-bottom: 100px;
-    min-height: 100px;
+    margin-bottom: 75px;
+    min-height: 75px;
 }
 
 footer a{
@@ -270,9 +289,17 @@ hr {
 
 @media screen and (max-width: 650px) {
     .home {
-        margin-left: 20px;
-        margin-right: 20px;
         display: flex;
         flex-direction: column;
+    }
+
+    .story, .home {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .menu {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
