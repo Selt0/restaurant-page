@@ -2,7 +2,7 @@ const menuItems = {
     'Appetizers': [
         {
             name: 'APPETIZER SAMPLER / Khai Vị Đặc Biệt',
-            description: '(2) Spring Rolls, (2) SIMPLY PHỞ Egg Rolls, (2) Shrimp Sausage Wrap, and (4) Shrimp Wrap'
+            description: '(2) Spring Rolls, (2) Egg Rolls, (2) Shrimp Sausage Wrap, and (4) Shrimp Wrap'
         },
         {
             name: 'VEGETARIAN SPRING ROLLS (2) / Gỏi Cuốn Chay',
@@ -39,7 +39,7 @@ const menuItems = {
             description: '*Vegetable broth available upon request'
         },
         {
-           name: '>SEAFOOD PHO/ Phở Hải Vị',
+           name: 'SEAFOOD PHO/ Phở Hải Vị',
            description: 'Combination of shrimp, calamari, imi. crab meat , and fish paste balls.' 
         },
         {
